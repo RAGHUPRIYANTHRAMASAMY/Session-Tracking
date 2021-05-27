@@ -233,9 +233,6 @@ $(document).ready(function(){
 						$("#input-ses_"+index[1]).remove();
 						sessionKeys.pop(sessionName);
 					}
-					
-					// $("#ses-del-btn_"+index[1]).closest('.display_session').remove();
-					// $(this.id).parent().remove();
 				}
 			})
 		}
@@ -257,40 +254,3 @@ $(document).ready(function(){
 	// });
 
 })
-
-	// adding session by user
-
-	// $('#add-session').click(function(){
-				
-	// 	let session_name = $('#session_name').val();
-	// 	let session_value = $('#session_value').val();
-	// 	if((session_name == null || session_name == "") || (session_value == null || session_value == "") ){
-	// 		alert("Session name or value cannot be empty");
-	// 	}
-	// 	else{
-	// 		const addsession = session_name.toLowerCase();
-	// 		if ((addsession == "useremail" ||addsession =="mailuser" || addsession.includes("email") || addsession.includes("user")) || addsession.length < 3){
-	// 			alert("Session name invalid: Try with other session name");
-	// 		}
-	// 		else{
-	// 			if(sessionKeys.includes(session_name)){
-	// 				alert("Session already running: You cannot create session, delete this session and try again");
-	// 			}
-	// 			else {
-	// 				$.ajax({
-	// 					type : 'POST',
-	// 					url : 'cookiegenerator',
-	// 					data: {sessionName: session_name, sessionValue: session_value},
-	// 					async: false,
-	// 					success: function (result) {
-	// 						console.log("Cookie added");
-	// 						// location.reload(true);
-	// 						createSessionElement(session_name);
-	// 						$('#session_name').val("");
-	// 						$('#session_value').val("");
-	// 					}
-	// 				})
-	// 			}
-	// 		}			
-	// 	}
-	// })
