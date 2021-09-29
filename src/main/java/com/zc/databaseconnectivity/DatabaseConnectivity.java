@@ -8,7 +8,7 @@ public class DatabaseConnectivity {
 
 	String dburl = "jdbc:mysql://localhost:3306/usercredentials";
 	String dbuname = "root";
-	String dbpassword = "ZcMysqL@2021";
+	String dbpassword = "********";
 	String dbdriver = "com.mysql.jdbc.Driver";
 	
 	public void loadDriver(String dBDriver) {
